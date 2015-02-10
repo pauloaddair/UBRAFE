@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Bussola</title>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.5.0.js"></script>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width, user-scalable=no"/>
+		<style>
+			html,body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				background-color: #005a00;
+			}
+			div { min-height: 90%;}
+			img { position: absolute; top: 50%; left: 50%; margin: -160px}
+        </style>
+        <link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        <script>
+        $( document ).ready(function() {
+            getLocation();
+        });
+        function getLocation()
+        {
+            if (navigator.geolocation)
+            {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+                else{$( "p" ).text("Este navegador não dispõe do rurso de geolocalização.");
+            }
+        }
+        function showPosition(position)
+        {
+        }
+        </script>
+    </head>
+    <body>
+    <div data-role="page" id="pagina1">
+      <div data-role="header">
+        <h1>UBRAFE</h1>
+      </div>
+      <div data-role="content">
+        <ul data-role="listview">
+          <li><a href="#pagina2">
+            <h3>QUEM SOMOS</h3>
+            <p>Nossa missão</p>
+          </a></li>
+          <li><a href="#pagina3">
+            <h3>ASSOCIADOS</h3>
+            <p>Os associados que fazem parte de nossa entidade</p>
+          </a></li>
+          <li><a href="#pagina4">
+            <h3>PARCEIROS</h3>
+            <p>Nossos parceiros</p>
+          </a></li>
+          <li><a href="#pagina5">
+            <h3>NOTÍCIAS</h3>
+            <p>As últimas novidades estão aqui</p>
+          </a></li>
+          <li><a href="#pagina6">
+            <h3>CONTATO</h3>
+            <p>Entre em contato conosco. Dê sua opinião, sugestão ou faça sua crítica</p>
+          </a></li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h4>UBRAFE 2015</h4>
+      </div>
+    </div>
+    <div data-role="page" id="pagina2">
+      <div data-role="header">
+        <h1>QUEM SOMOS</h1>
+      </div>
+      <div data-role="content">Conteúdo</div>
+      <div data-role="footer">
+        <h4>UBRAFE 2015</h4>
+      </div>
+    </div>
+    <div data-role="page" id="pagina3">
+      <div data-role="header">
+        <h1>Associados</h1>
+      </div>
+      <div data-role="content">Conteúdo</div>
+      <div data-role="footer">
+        <h4>UBRAFE 2015</h4>
+      </div>
+    </div>
+    <div data-role="page" id="pagina4">
+      <div data-role="header">
+        <h1>Parceiros</h1>
+      </div>
+      <div data-role="content">Conteúdo</div>
+      <div data-role="footer">
+        <h4>UBRAFE 2015</h4>
+      </div>
+    </div>
+    <div data-role="page" id="pagina5">
+      <div data-role="header">
+        <h1>Notícias</h1>
+      </div>
+      <div data-role="content">Conteúdo</div>
+      <div data-role="footer">
+        <h4>UBRAFE 2015</h4>
+      </div>
+    </div>
+    <div data-role="page" id="pagina6">
+      <div data-role="header">
+        <h1>Contato</h1>
+      </div>
+      <div data-role="content">Conteúdo</div>
+      <div data-role="footer">
+        <h4>UBRAFE 2015</h4>
+      </div>
+    </div>
+    </body>
+</html>
