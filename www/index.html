@@ -67,7 +67,274 @@ ss	clear: none;
 	border-radius: 30px;
 	overflow:hidden;    
 }
-    </style>
+    #QRCODE {
+	width: 32px;
+}
+
+#ipsis {
+	clear: right;
+}
+#foto1 {
+	float: left;
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	border: thin solid #CCC;
+}
+
+#QRCODE img {
+	width: 100%;
+}
+
+.box {
+	width:95%;
+	height:200px;
+	background:#FFF;
+	margin:40px auto;
+}
+
+/*==================================================
+ * Effect 1
+ * ===============================================*/
+.effect1{
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+}
+
+/*==================================================
+ * Effect 2
+ * ===============================================*/
+.effect2
+{
+  position: relative;
+}
+.effect2:before, .effect2:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+.effect2:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * Effect 3
+ * ===============================================*/
+.effect3
+{
+  position: relative;
+}
+.effect3:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+/*==================================================
+ * Effect 4
+ * ===============================================*/
+.effect4
+{
+  position: relative;
+}
+.effect4:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  right: 10px;
+  left: auto;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+/*==================================================
+ * Effect 5
+ * ===============================================*/
+.effect5
+{
+  position: relative;
+}
+.effect5:before, .effect5:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+.effect5:after
+{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
+
+/*==================================================
+ * Effect 6
+ * ===============================================*/
+.effect6
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect6:before, .effect6:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:50%;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+
+/*==================================================
+ * Effect 7
+ * ===============================================*/
+.effect7
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect7:before, .effect7:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.effect7:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+/*==================================================
+ * Effect 8
+ * ===============================================*/
+.effect8
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.effect8:before, .effect8:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.effect8:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+
+</style>
     <script>
       function init() {
         var compass = document.getElementById('compass');
@@ -228,21 +495,21 @@ $(window).load(function() {
             <h3>NOTÍCIAS</h3>
             <p>As últimas novidades estão aqui</p>
           </a></li>
-          <li><a href="#pagina6">
+          <li><a href="#page1">
             <h3>CONTATO</h3>
-            <p>Entre em contato conosco. Dê sua opinião, sugestão ou faça sua crítica</p>
+            <p>Entre em contato conosco. Dê sua opinião, sugestão ou crítica</p>
           </a></li>
         </ul>
-        <div id="QRCODE"><img src="img/QRCDE.png" alt=""/></div>
         </div>
-  <div data-role="footer" data-theme="c">
+  <div data-role="footer" data-theme="c" data-position="fixed">
+        <div id="QRCODE"><img src="img/QRCDE.png" alt=""/></div>
 <img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
 
   <img src="img/menu-tw.jpg" alt="" onclick="window.plugins.socialsharing.shareViaTwitter('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.')"/><img src="img/menu_wa.png" alt="" onclick="window.plugins.socialsharing.shareViaWhatsApp('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Whatsapp!')})"/><img src="img/menu-share.jpg" alt="" width="32" onclick="window.plugins.socialsharing.share('UMC+UNIVERSIDADE', 'Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null, 'http://www.ubrafe.org.br')"/>
   <div data-role="navbar">
 		<ul>
 			<li class="ui-btn-active ui-state-persist" data-position="fixed"><a href="index.html" data-icon="grid" class="ui-btn-active">Inicio</a></li>
-			<li><a href="#page" data-icon="gear">Check-in</a></li>
+			<li><a href="#page2" data-icon="gear">Calendário</a></li>
 			<li><a href="#page1" data-icon="star">Contato</a></li>
 		</ul>
 	</div>
@@ -273,23 +540,70 @@ $(window).load(function() {
     <a href="#" data-role="button">Enviar</a>
     
   </form></div>
-  <div data-role="footer" data-theme="b">
-<div data-role="navbar">
+  <div data-role="footer" data-theme="c" data-position="fixed">
+        <div id="QRCODE"><img src="img/QRCDE.png" alt=""/></div>
+<img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
+
+  <img src="img/menu-tw.jpg" alt="" onclick="window.plugins.socialsharing.shareViaTwitter('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.')"/><img src="img/menu_wa.png" alt="" onclick="window.plugins.socialsharing.shareViaWhatsApp('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Whatsapp!')})"/><img src="img/menu-share.jpg" alt="" width="32" onclick="window.plugins.socialsharing.share('UMC+UNIVERSIDADE', 'Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null, 'http://www.ubrafe.org.br')"/>
+  <div data-role="navbar">
 		<ul>
-			<li class="ui-btn-active ui-state-persist"><a href="index.html" data-icon="grid" class="ui-btn-active" target="_top">Inicio</a></li>
-			<li><a href="#page" data-icon="gear">Check-in</a></li>
+			<li class="ui-btn-active ui-state-persist" data-position="fixed"><a href="index.html" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+			<li><a href="#page2" data-icon="gear">Calendário</a></li>
 			<li><a href="#page1" data-icon="star">Contato</a></li>
 		</ul>
 	</div>
       </div>
 </div>
-    <div data-role="page" id="pagina2">
+  <div data-role="page" id="pagina2">
       <div data-role="header">
   <img src="img/vinheta.png" width="100%" alt="UBRAFE">
       </div>
-      <div data-role="content">Conteúdo</div>
-      <div data-role="footer">
-        <h4>UBRAFE 2015</h4>
+      <div data-role="content">
+      <h3>Sobre nós</h3>
+      <p>É a entidade que representa o setor de promoção comercial nacional e internacionalmente junto a todos os segmentos da nossa economia. Em seu quadro de associados, estão as maiores empresas do sistema expositor brasileiro.</p>
+      <p>A UBRAFE apresenta ao mercado e ao governo a importância e os números do setor. A realização de feiras comerciais sempre traz dividendos para a sociedade: propicia movimentação econômica, transferência de tecnologia, conhecimento e ativa a rede de serviços gerando renda para a comunidade, servindo como elo na ligação entre a cadeia produtiva e seus canais de distribuição e/ou consumidor final.</p>
+      <p>Anualmente, as feiras com a marca UBRAFE reúnem cerca de 32 mil expositores nacionais e 6 mil expositores estrangeiros, mais de 100 mil marcas, que atraem um universos de mais de 7,5 milhões de visitantes. Abrangendo os mais variados setores da nossa economia, representam 90% da ocupação em pavilhões de todos os eventos de promoção comercial realizados no Brasil.</p>
+      <div data-role="collapsible-set">
+        <div data-role="collapsible">
+            <h3>Mensagem da UBRAFE</h3>
+            <div class="box effect1">
+	<img src="img/MVB.png" width="150" height="150" alt="Marcelo Vital Brasil" id="foto1">
+<div id="ipsis">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+</div></div>
+
+            
+          </div>
+          <div data-role="collapsible" data-collapsed="true">
+            <h3>Mensagem do Diretor Executivo da UBRAFE</h3>
+<div class="box effect1">
+	<img src="img/ACM.png" width="150" height="150" alt="Marcelo Vital Brasil" id="foto1">
+<div id="ipsis"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+</div></div>          </div>
+          <div data-role="collapsible" data-collapsed="true">
+            <h3>Onde estamos</h3>
+<div class="box effect1">
+	<img src="img/logo.png" width="170" height="200" alt="Marcelo Vital Brasil" id="foto1">
+<div id="ipsis">
+  <p>Rua Frei Caneca,91, 11º</p>
+  <p>Telefone: <a href="TEL:01131207099">(11) 3120 7099</a></p>
+          <p>E-mail: <a href="mailto:contato@ubrafe.org.br">contato@ubrafe.org.br</a></p>
+</div></div>
+        </div>
+        </div>
+      </div>
+      <div data-role="footer" data-theme="c" data-position="fixed"><img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
+
+  <img src="img/menu-tw.jpg" alt="" onclick="window.plugins.socialsharing.shareViaTwitter('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.')"/><img src="img/menu_wa.png" alt="" onclick="window.plugins.socialsharing.shareViaWhatsApp('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Whatsapp!')})"/><img src="img/menu-share.jpg" alt="" width="32" onclick="window.plugins.socialsharing.share('UMC+UNIVERSIDADE', 'Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null, 'http://www.ubrafe.org.br')"/>
+  <div data-role="navbar">
+		<ul>
+			<li class="ui-btn-active ui-state-persist" data-position="fixed"><a href="index.html" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+			<li><a href="#page2" data-icon="gear">Calendário</a></li>
+			<li><a href="#page1" data-icon="star">Contato</a></li>
+		</ul>
+	</div>
       </div>
     </div>
     <div data-role="page" id="pagina3">
@@ -297,42 +611,70 @@ $(window).load(function() {
   <img src="img/vinheta.png" width="100%" alt="UBRAFE">
       </div>
       <div data-role="content">Conteúdo</div>
-      <div data-role="footer">
-        <h4>UBRAFE 2015</h4>
-      </div>
-    </div>
+<div data-role="footer" data-theme="c" data-position="fixed"><img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
+
+  <img src="img/menu-tw.jpg" alt="" onclick="window.plugins.socialsharing.shareViaTwitter('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.')"/><img src="img/menu_wa.png" alt="" onclick="window.plugins.socialsharing.shareViaWhatsApp('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Whatsapp!')})"/><img src="img/menu-share.jpg" alt="" width="32" onclick="window.plugins.socialsharing.share('UMC+UNIVERSIDADE', 'Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null, 'http://www.ubrafe.org.br')"/>
+  <div data-role="navbar">
+		<ul>
+			<li class="ui-btn-active ui-state-persist" data-position="fixed"><a href="index.html" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+			<li><a href="#page2" data-icon="gear">Calendário</a></li>
+			<li><a href="#page1" data-icon="star">Contato</a></li>
+		</ul>
+	</div>
+  </div>    </div>
     <div data-role="page" id="pagina4">
       <div data-role="header">
   <img src="img/vinheta.png" width="100%" alt="UBRAFE">
       </div>
       <div data-role="content">Conteúdo</div>
-      <div data-role="footer">
-        <h4>UBRAFE 2015</h4>
-      </div>
-    </div>
+<div data-role="footer" data-theme="c" data-position="fixed"><img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
+
+  <img src="img/menu-tw.jpg" alt="" onclick="window.plugins.socialsharing.shareViaTwitter('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.')"/><img src="img/menu_wa.png" alt="" onclick="window.plugins.socialsharing.shareViaWhatsApp('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Whatsapp!')})"/><img src="img/menu-share.jpg" alt="" width="32" onclick="window.plugins.socialsharing.share('UMC+UNIVERSIDADE', 'Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null, 'http://www.ubrafe.org.br')"/>
+  <div data-role="navbar">
+		<ul>
+			<li class="ui-btn-active ui-state-persist" data-position="fixed"><a href="index.html" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+			<li><a href="#page2" data-icon="gear">Calendário</a></li>
+			<li><a href="#page1" data-icon="star">Contato</a></li>
+		</ul>
+	</div>
+  </div>    </div>
     <div data-role="page" id="pagina5">
       <div data-role="header">
   <img src="img/vinheta.png" width="100%" alt="UBRAFE">
       </div>
       <div data-role="content">Conteúdo</div>
-      <div data-role="footer">
-        <h4>UBRAFE 2015</h4>
-      </div>
-    </div>
+<div data-role="footer" data-theme="c" data-position="fixed"><img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
+
+  <img src="img/menu-tw.jpg" alt="" onclick="window.plugins.socialsharing.shareViaTwitter('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.')"/><img src="img/menu_wa.png" alt="" onclick="window.plugins.socialsharing.shareViaWhatsApp('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Whatsapp!')})"/><img src="img/menu-share.jpg" alt="" width="32" onclick="window.plugins.socialsharing.share('UMC+UNIVERSIDADE', 'Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null, 'http://www.ubrafe.org.br')"/>
+  <div data-role="navbar">
+		<ul>
+			<li class="ui-btn-active ui-state-persist" data-position="fixed"><a href="index.html" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+			<li><a href="#page2" data-icon="gear">Calendário</a></li>
+			<li><a href="#page1" data-icon="star">Contato</a></li>
+		</ul>
+	</div>
+  </div>    </div>
     <div data-role="page" id="pagina6">
       <div data-role="header">
   <img src="img/vinheta.png" width="100%" alt="UBRAFE">
       </div>
       <div data-role="content">Conteúdo</div>
-      <div data-role="footer">
-        <h4>UBRAFE 2015</h4>
-      </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="barcodescanner.js"></script>
-    <script type="text/javascript" src="childbrowser.js"></script>
-    <script type="text/javascript" src="js/indexUBRAFE.js"></script>
-    <script type="text/javascript">
+<div data-role="footer" data-theme="c" data-position="fixed"><img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
+
+  <img src="img/menu-tw.jpg" alt="" onclick="window.plugins.socialsharing.shareViaTwitter('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.')"/><img src="img/menu_wa.png" alt="" onclick="window.plugins.socialsharing.shareViaWhatsApp('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Whatsapp!')})"/><img src="img/menu-share.jpg" alt="" width="32" onclick="window.plugins.socialsharing.share('UMC+UNIVERSIDADE', 'Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null, 'http://www.ubrafe.org.br')"/>
+  <div data-role="navbar">
+		<ul>
+			<li class="ui-btn-active ui-state-persist" data-position="fixed"><a href="index.html" data-icon="grid" class="ui-btn-active">Inicio</a></li>
+			<li><a href="#page2" data-icon="gear">Calendário</a></li>
+			<li><a href="#page1" data-icon="star">Contato</a></li>
+		</ul>
+	</div>
+  </div>    </div>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="barcodescanner.js"></script>
+  <script type="text/javascript" src="childbrowser.js"></script>
+  <script type="text/javascript" src="js/indexUBRAFE.js"></script>
+  <script type="text/javascript">
     app.initialize();
     </script>
   </body>

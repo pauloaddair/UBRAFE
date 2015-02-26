@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.novaeratec.ubrafe"
-        version   = "1.1.80">
+        version   = "1.1.85">
 
     <name>UBRAFE 2015</name>
 
@@ -44,7 +44,7 @@
     <gap:plugin name="org.apache.cordova.contacts" />
     <gap:plugin name="org.apache.cordova.geolocation" />
     <!-- Third party plugins -->
-    <gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.1.0" />
+    <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" version="4.3.8" />
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
 
