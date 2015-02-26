@@ -1,141 +1,56 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
-<link href="css/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/flexslider.css" rel="stylesheet" type="text/css">
-<link href="css/style1.css" rel="stylesheet" type="text/css">
-<script src="jquery/jquery-1.6.4.min.js" type="text/javascript"></script>
-<script src="jquery/jquery.mobile-1.0.min.js" type="text/javascript"></script>
-<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
-<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
-<script src="js/jquery.mousewheel.js" type="text/javascript"></script>
-<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
-<script src="js/jquery.jsocial.js" type="text/javascript"></script>
-<style>
-      #compass, #compass1, #compass2, #compass3, #compass4 {
-	width: 60px;
-	transform-origin: 50% 50%;
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	float: left;
-	  }
-      #busca {
-	width: 60px;
-	transform-origin: 50% 50%;
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	float: left;
-	  }
-      #icone {
-	width: 60px;
-	transform-origin: 50% 50%;
-	-webkit-transform-origin: 50% 50%;
-	-moz-transform-origin: 50% 50%;
-	float: right;
-	position: absolute;
-	right: 0px;
-      }
-#facilidade, #facilidade1, #facilidade2, #facilidade3 {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	color: #00F;
-ss	clear: none;
-	float: left;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-top: auto;
-	margin-bottom: auto;
-	clear: none;
-	padding-left: 20px;
-	position: relative;
-	top: auto;
-	bottom: auto;
-	left: 20px;
-}
-    #compassContainer {
-	float: left;
-	width: 100%;
-	border: thin solid #CCC;
-	height: 60px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	overflow:hidden;    
-}
-    </style>
-    <script>
-      function init() {
-        var compass = document.getElementById('compass');
-        if(window.DeviceOrientationEvent) {
- 
-          window.addEventListener('deviceorientation', function(event) {
-                var alpha;
-                var alpha1;
-                var alpha2;
-                var alpha3;
-                //Check for iOS property
-                if(event.webkitCompassHeading) {
-                  alpha = event.webkitCompassHeading;
-				  alpha1 = alpha + 90;
-				  alpha2 = alpha + 180;
-				  alpha3 = alpha + 270;
-				  
-                  //Rotation is reversed for iOS
-                  compass.style.WebkitTransform = 'rotate(-' + alpha + 'deg)';
-                  compass1.style.WebkitTransform = 'rotate(-' + alpha1 + 'deg)';
-                  compass2.style.WebkitTransform = 'rotate(-' + alpha2 + 'deg)';
-                  compass3.style.WebkitTransform = 'rotate(-' + alpha3 + 'deg)';
-				  
-                }
-                //non iOS
-                else {
-                  alpha = event.alpha;
-                  webkitAlpha = alpha;
-                  if(!window.chrome) {
-                    //Assume Android stock (this is crude, but good enough for our example) and apply offset
-                    webkitAlpha = alpha-270;
-                  }
-                }
- 
-                compass.style.Transform = 'rotate(' + alpha + 'deg)';
-                compass.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)';
-                //Rotation is reversed for FF
-                compass.style.MozTransform = 'rotate(-' + alpha + 'deg)'; 
-                alpha = alpha + 90;
-				webkitAlpha = webkitAlpha + 90;
-				compass1.style.Transform = 'rotate(' + alpha + 'deg)';
-                compass1.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)';
-                //Rotation is reversed for FF
-                compass1.style.MozTransform = 'rotate(-' + alpha1 + 'deg)'; 
-                alpha = alpha + 90;
-				webkitAlpha = webkitAlpha + 90;
-                compass2.style.Transform = 'rotate(' + alpha + 'deg)';
-                compass2.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)';
-                //Rotation is reversed for FF
-                compass2.style.MozTransform = 'rotate(-' + alpha + 'deg)'; 
-                alpha = alpha + 90;
-				webkitAlpha = webkitAlpha + 90;
-                compass3.style.Transform = 'rotate(' + alpha + 'deg)';
-                compass3.style.WebkitTransform = 'rotate('+ webkitAlpha + 'deg)';
-                //Rotation is reversed for FF
-                compass3.style.MozTransform = 'rotate(-' + alpha + 'deg)'; 
-              }, false);
+    <head>
+        <meta charset="utf-8"/>
+        <title>UBRAFE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css">
+        <link href="css/style1.css" rel="stylesheet" type="text/css">
+        <script src="jquery/jquery-1.6.4.min.js" type="text/javascript"></script>
+        <script src="jquery/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+        <script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+        <script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+        <script src="js/jquery.mousewheel.js" type="text/javascript"></script>
+        <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="js/jquery.jsocial.js" type="text/javascript"></script>
+		<style>
+			html,body {
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				background-color: #005a00;
+			}
+			div { min-height: 90%;}
+			img { position: absolute; top: 50%; left: 50%; margin: -160px}
+        </style>
+        <script>
+        $( document ).ready(function() {
+            getLocation();
+        });
+        function getLocation()
+        {
+            if (navigator.geolocation)
+            {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+                else{$( "p" ).text("Este navegador não dispõe do recurso de geolocalização.");
+            }
         }
-      }
-    </script>
-  <title>VIRTUAL TOTEM</title>
-  </head>
-  <body onLoad="init()">
-<div data-role="page" id="page">
-  <div data-role="header" data-theme="b">
-  <img src="img/vinheta.png" width="100%" alt="UBRAFE">
-  </div>
-  <div data-role="content">
+        function showPosition(position)
+        {
+        }
+        </script>
+    </head>
+    <body>
+    <div data-role="page" id="pagina1">
+      <div data-role="header">
+        <h1>UBRAFE</h1>
+      </div>
+      <div data-role="content">
 	<script type="text/javascript">
 // BeginOAWidget_Instance_2827522: #OAWidget
 $(window).load(function() {
@@ -211,7 +126,7 @@ $(window).load(function() {
 		        </div>
 			    <!-- #main -->
   </div>
-    <ul data-role="listview">
+          <ul data-role="listview">
           <li><a href="#pagina2">
             <h3>QUEM SOMOS</h3>
             <p>Nossa missão</p>
@@ -232,58 +147,15 @@ $(window).load(function() {
             <h3>CONTATO</h3>
             <p>Entre em contato conosco. Dê sua opinião, sugestão ou faça sua crítica</p>
           </a></li>
-        </ul></div>
-  <div data-role="footer" data-theme="c">
-<img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
-
-  <img src="img/menu-tw.jpg" alt="" onclick="window.plugins.socialsharing.shareViaTwitter('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.')"/><img src="img/menu_wa.png" alt="" onclick="window.plugins.socialsharing.shareViaWhatsApp('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Whatsapp!')})"/><img src="img/menu-share.jpg" alt="" width="32" onclick="window.plugins.socialsharing.share('UMC+UNIVERSIDADE', 'Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null, 'http://www.ubrafe.org.br')"/>
-  <div data-role="navbar">
-		<ul>
-			<li class="ui-btn-active ui-state-persist" data-position="fixed"><a href="index.html" data-icon="grid" class="ui-btn-active">Inicio</a></li>
-			<li><a href="#page" data-icon="gear">Check-in</a></li>
-			<li><a href="#page1" data-icon="star">Contato</a></li>
-		</ul>
-	</div>
+        </ul>
       </div>
-  </div>
-<div data-role="page" id="page1">
-  <div data-role="header">
-  <img src="img/vinheta.png" width="100%" alt="UBRAFE">
-  </div>
-  <div data-role="content">
-  <form action="" method="get">
-    <div data-role="fieldcontain">
-      <label for="textinput">Nome:</label>
-      <input type="text" name="textinput" id="textinput" value="" placeholder="digite seu nome"/>
-    </div>
-    <div data-role="fieldcontain">
-      <label for="textinput2">Empresa:</label>
-      <input type="text" name="textinput2" id="textinput2" value="" placeholder="nome da empresa"/>
-    </div>
-    <div data-role="fieldcontain">
-      <label for="textinput3">Telefone:</label>
-      <input type="tel" name="textinput3" id="textinput3" value="" placeholder="telefone"/>
-    </div>
-    <div data-role="fieldcontain">
-      <label for="textinput4">Data de nascimento:</label>
-      <input type="date" name="textinput4" id="textinput4" value="" placeholder="data de nascimento"/>
-    </div>
-    <a href="#" data-role="button">Enviar</a>
-    
-  </form></div>
-  <div data-role="footer" data-theme="b">
-<div data-role="navbar">
-		<ul>
-			<li class="ui-btn-active ui-state-persist"><a href="index.html" data-icon="grid" class="ui-btn-active" target="_top">Inicio</a></li>
-			<li><a href="#page" data-icon="gear">Check-in</a></li>
-			<li><a href="#page1" data-icon="star">Contato</a></li>
-		</ul>
-	</div>
+      <div data-role="footer">
+        <h4>UBRAFE 2015</h4>
       </div>
-</div>
+    </div>
     <div data-role="page" id="pagina2">
       <div data-role="header">
-  <img src="img/vinheta.png" width="100%" alt="UBRAFE">
+        <h1>QUEM SOMOS</h1>
       </div>
       <div data-role="content">Conteúdo</div>
       <div data-role="footer">
@@ -292,7 +164,7 @@ $(window).load(function() {
     </div>
     <div data-role="page" id="pagina3">
       <div data-role="header">
-  <img src="img/vinheta.png" width="100%" alt="UBRAFE">
+        <h1>Associados</h1>
       </div>
       <div data-role="content">Conteúdo</div>
       <div data-role="footer">
@@ -301,7 +173,7 @@ $(window).load(function() {
     </div>
     <div data-role="page" id="pagina4">
       <div data-role="header">
-  <img src="img/vinheta.png" width="100%" alt="UBRAFE">
+        <h1>Parceiros</h1>
       </div>
       <div data-role="content">Conteúdo</div>
       <div data-role="footer">
@@ -310,7 +182,7 @@ $(window).load(function() {
     </div>
     <div data-role="page" id="pagina5">
       <div data-role="header">
-  <img src="img/vinheta.png" width="100%" alt="UBRAFE">
+        <h1>Notícias</h1>
       </div>
       <div data-role="content">Conteúdo</div>
       <div data-role="footer">
@@ -319,12 +191,12 @@ $(window).load(function() {
     </div>
     <div data-role="page" id="pagina6">
       <div data-role="header">
-  <img src="img/vinheta.png" width="100%" alt="UBRAFE">
+        <h1>Contato</h1>
       </div>
       <div data-role="content">Conteúdo</div>
       <div data-role="footer">
         <h4>UBRAFE 2015</h4>
       </div>
     </div>
-  </body>
+    </body>
 </html>

@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.novaeratec.ubrafe"
-        version   = "1.1.5">
+        version   = "1.1.7">
 
     <name>UBRAFE 2015</name>
 
@@ -59,7 +59,8 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
     <!-- Third party plugins -->
-	  <gap:plugin name="com.phonegap.plugins.barcodescanner" version="1.1.0" />
+	<gap:plugin name="com.phonegap.plugins.barcodescanner" />
+	<gap:plugin name="nl.x-services.plugins.socialsharing" />
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
 
     <!-- Define app icon for each platform. -->
