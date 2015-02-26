@@ -128,7 +128,7 @@ ss	clear: none;
         }
       }
     </script>
-  <title>VIRTUAL TOTEM</title>
+  <title>UBRAFE 2015</title>
   </head>
   <body onLoad="init()">
 <div data-role="page" id="page">
@@ -221,8 +221,8 @@ $(window).load(function() {
             <p>Os associados que fazem parte de nossa entidade</p>
           </a></li>
           <li><a href="#pagina4">
-            <h3>PARCEIROS</h3>
-            <p>Nossos parceiros</p>
+            <h3>CALENDÁRIO DE FEIRAS</h3>
+            <p>As principais feiras do país</p>
           </a></li>
           <li><a href="#pagina5">
             <h3>NOTÍCIAS</h3>
@@ -232,7 +232,9 @@ $(window).load(function() {
             <h3>CONTATO</h3>
             <p>Entre em contato conosco. Dê sua opinião, sugestão ou faça sua crítica</p>
           </a></li>
-        </ul></div>
+        </ul>
+        <div id="QRCODE"><img src="img/QRCDE.png" alt=""/></div>
+        </div>
   <div data-role="footer" data-theme="c">
 <img src="img/menu-fb.jpg" width="32" height="32" alt="" onclick="window.plugins.socialsharing.shareViaFacebookWithPasteMessageHint('Eu já tenho o aplicativo da UBRAFE. Baixe você também e fique por dentro das novidades.', null /* img */, 'http://www.ubrafe.org.br', 'Mensagem pronta para colar!', function() {console.log('share ok')}, function(errormsg){alert('Não foi possível compartilhar via Facebook!')})"/>
 
@@ -326,5 +328,12 @@ $(window).load(function() {
         <h4>UBRAFE 2015</h4>
       </div>
     </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="barcodescanner.js"></script>
+    <script type="text/javascript" src="childbrowser.js"></script>
+    <script type="text/javascript" src="js/indexUBRAFE.js"></script>
+    <script type="text/javascript">
+    app.initialize();
+    </script>
   </body>
 </html>
